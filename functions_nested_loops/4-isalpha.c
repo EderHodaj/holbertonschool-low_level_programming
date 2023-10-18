@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- *  * int _isalpha - Entry point
- *   * ctype.h header file
- *    * @c: is parameter
- *     * Return:0
+ * _isalpha - Entry point
+ * ctype.h header file
+ * @c: is parameter
+ * Return:0
  */
+
 int _isalpha(int c)
 {
 	if (c >= 'a' && c <= 'z')
