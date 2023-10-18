@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * * int _islower - Entry point
- * Return:0
+ *  * _islower - Entry point
+ *   * ctype.h header file
+ *    * @c: is parameter
+ *     * Return:0
  */
 int _islower(int c)
 {
