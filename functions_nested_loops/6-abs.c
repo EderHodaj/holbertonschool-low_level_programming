@@ -2,8 +2,8 @@
 
 /**
  * _abs - Entry point
- * @n: is parameter
- * return abs(n);
+ * @a: is parameter
+ * return abs(a);
  * Return:0
  */
 
