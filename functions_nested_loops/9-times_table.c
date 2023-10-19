@@ -1,48 +1,42 @@
 #include "main.h"
 
+/**
+ * times_table - Entry point
+ * return abs(n);
+ * Return:0
+ */
+
 void times_table(void)
 {
-	int i;
-	int j;
+	int i, j, multi;
 
-	for (i = 0; i <=9; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; j <=9; j++)
+		for (j = 0; j < 10; j++)
 		{
-            		if ((i*(j+1)) >= 10)
-            		{ 
-                		if (j==9)
-                		{
-					_putchar ('0' + (i*j) / 10);
-					_putchar ('0' + (i*j) % 10);
-                		}
-                		else
-                		{
-                			_putchar ('0' + (i*j) / 10);
-					_putchar ('0' + (i*j) % 10);
+			multi = i * j;
+			if (multi >= 10)
+			{
+				_putchar (',');
+				_putchar (' ');
+				_putchar (multi / 10 + '0');
+				_putchar (multi % 10 + '0');
+			}
+			else
+			{
+				if (j == 0)
+				{
+					_putchar (multi + '0');
+				}
+				else
+				{
 					_putchar (',');
 					_putchar (' ');
 					_putchar (' ');
-                		}
-            		}
-            		else
-            		{
-                		if (j==9)
-                		{
-                			_putchar ('0' + (i*j) / 10);
-                                        _putchar ('0' + (i*j) % 10);
-                		}
-                		else
-				{
-                			_putchar ('0' + (i*j) / 10);
-                                        _putchar ('0' + (i*j) % 10);
-                                        _putchar (',');
-                                        _putchar (' ');
-                                        _putchar (' ');
-                		}
-            			}
-        		}
+					_putchar (multi + '0');
+				}
+			}
+		}
 		_putchar('\n');
 	}
-	
 }
