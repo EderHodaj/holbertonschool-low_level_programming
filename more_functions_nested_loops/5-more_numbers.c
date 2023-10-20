@@ -7,17 +7,18 @@
 
 void more_numbers()
 {
-    int number, printNumber;
-    for (number = 0; number < 10; number++)
-    {
-        for (printNumber = 0; printNumber <= 14; printNumber++)
-        {
-            if (printNumber > 9)
-            {
-                _putchar('0' + printNumber / 10);
-            }
-            _putchar('0' + printNumber % 10);
-        }
-        _putchar('\n');
-    }
+	int number, printNumber;
+
+	for (number = 0; number < 10; number++)
+	{
+		for (printNumber = 0; printNumber <= 14; printNumber++)
+		{
+			if (printNumber > 9)
+			{
+				_putchar('0' + printNumber / 10);
+			}
+			_putchar('0' + printNumber % 10);
+		}
+		_putchar('\n');
+	}
 }
