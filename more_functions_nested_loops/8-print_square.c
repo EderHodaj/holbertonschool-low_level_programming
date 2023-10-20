@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * print_square - function print line
+ * @size: - parameter from input until when print \
+ * main.h header file
+ * Return: Void
+ */
 
 void print_square(int size)
 {
