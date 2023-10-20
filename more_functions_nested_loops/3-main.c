@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_numbers - function that multiplies two integers
+ * main.h header file
+ * Return:0
  */
 
 int main(void)
