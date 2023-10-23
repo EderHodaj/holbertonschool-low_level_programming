@@ -1,6 +1,6 @@
 #include "main.h"
-/*
- * _puts - sdkfj
+/**
+ * _puts - Exx3
  * @str: sdfjis
  */
 
