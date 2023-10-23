@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strlen - char
- * @s:Sec
- * return (0):value
+ * @s: Sec
+ * Return: `value
  */
 
 int _strlen(char *s)
