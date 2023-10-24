@@ -3,6 +3,7 @@
  * _strcpy - exx9
  * @dest:sdfs
  * @src:sdf
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
