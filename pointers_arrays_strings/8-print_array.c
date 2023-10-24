@@ -3,7 +3,7 @@
 /**
  * print_array - exx8
  * @a: sdf
- * @n:
+ * @n: sdgfsd
  */
 
 void print_array(int *a, int n)
@@ -13,8 +13,9 @@ void print_array(int *a, int n)
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", a[i]);
-		if (i < n-1)
-			printf (", ");
+
+		if (i < n - 1)
+			printf(", ");
 	}
-	printf ("\n");
+	printf("\n");
 }
