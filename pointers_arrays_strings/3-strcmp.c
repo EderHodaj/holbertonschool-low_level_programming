@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * _strcmp - sdfsd
+ * @s1:sdfsd
+ * @s2:dsvsd
+ */
 
 int _strcmp(char *s1, char *s2)
 {
