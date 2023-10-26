@@ -1,26 +1,24 @@
 #include "main.h"
+
 /**
- * leet - sdfsdf
- * Return:sdgs 
+ *leet - asdsa
+ *@str: aeds
+ *Return: saed
  */
 
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i;
+	int i, j;
+	char letter[] = "aAeEoOtTlL";
+	char number[] = "4433007711";
 
-	for (i = 0;s[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		else if (s[i] == 'e' || s[i] == 'E')
-                        s[i] = '3';
-		else if (s[i] == 'o' || s[i] == 'O')
-                        s[i] = '0';
-		else if (s[i] == 't' || s[i] == 'T')
-                        s[i] = '7';
-		else if (s[i] == 'l' || s[i] == 'L')
-                        s[i] = '1';
+		for (j = 0; letter[j] != '\0'; j++)
+		{
+			if (str[i] == letter[j])
+				str[i] = number[j];
+		}
 	}
-	return (s);
+	return (str);
 }
-
