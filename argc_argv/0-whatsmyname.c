@@ -1,11 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(int argc,char** argv)
+/**
+ * main - prints its name, followed by a new line
+ * @argc: unused attribute
+ * @argv: first char
+ * Return: return name
+ */
+
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-	return (argc);
-
 	printf("%s\n", *argv);
-
 	return (0);
 }
