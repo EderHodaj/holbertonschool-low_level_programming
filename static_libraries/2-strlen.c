@@ -1,22 +1,19 @@
 #include "main.h"
+
 /**
- * _strlen - char
- * @s: Sec
- * Return: `value
+ * _strlen - sjbfsjdnn
+ * @s: pointer to char
+ * Return: returns the number of characters
  */
 
-void puts_half(char *str)
+int _strlen(char *s)
 {
-	int i = 0, len, mid, j;
-	
-	while (str[i] != '\0')
+	int i;
+	int count = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		i++;
+		count++;
 	}
-	len = i;
-	mid = len / 2;
-	for (j = mid; j < len; j++)
-	{
-		_putchar(str[j]);
-	}
+	return (count);
 }

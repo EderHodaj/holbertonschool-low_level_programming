@@ -1,28 +1,26 @@
 #include "main.h"
 
 /**
- *_strncat - chgka
- *@dest: chgvjh
- *@src: gjvhkj
- *@n:xfchgkj
- *Return: zdfxg
+ * _strncat - suifhduihf
+ * @dest: fbdbj
+ * @src: duhskuhfi
+ * @n: dufhrukfh
+ * Return: returns destination
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char *ptr = dest;
+	int i, j;
 
-	while (*ptr != '\0')
+	i = 0;
+	while (dest[i] != '\0')
+		i++;
+
+	j = 0;
+	while (src[j]  != '\0' && j < n)
 	{
-		ptr++;
+		dest[i + j] = src[j];
+		j++;
 	}
-	while (*src != '\0' && n > 0)
-	{
-		*ptr = *src;
-		ptr++;
-		src++;
-		n--;
-	}
-	*ptr = '\0';
 	return (dest);
 }
