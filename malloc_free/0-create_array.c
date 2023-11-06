@@ -4,6 +4,7 @@
  * create_array - sdfsdf
  * @size:sdgsdg
  * @c:sgsdgd
+ * Return:dfgsdg
  */
 
 char *create_array(unsigned int size, char c)
@@ -13,12 +14,12 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-	return NULL;
+	return (NULL);
 	}
 
 	if (array == NULL)
 	{
-	return NULL;
+	return (NULL);
 	}
 
 	for (i = 0; i < size; i++)
@@ -26,5 +27,5 @@ char *create_array(unsigned int size, char c)
 		array[i] = c;
 	}
 
-    return array;
+	return (array);
 }
