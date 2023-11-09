@@ -1,9 +1,6 @@
-#include <stdio.h>
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
-int ABS(int x)
-{
-	if (x < 0)
-		return (-x);
-	else
-		return (x);
-}
+#define ABS(x) ((x) < 0 ? -(x) : (x))
+
+#endif /* FUNCTION_LIKE_MACRO_H */
