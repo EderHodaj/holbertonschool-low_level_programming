@@ -1,0 +1,30 @@
+#include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
+#include <stddef.h>
+/**
+ * print_strings - asdfsdf
+ * @separator:sfsdf
+ * @n:dsfsdf
+ */
+
+void print_strings(const char *separator, const unsigned int n, ...)
+{
+	va_list args;
+	unsigned int i;
+
+	va_start(args, n);
+
+	for (i = 0; i < n; i++)
+	{
+		char* x = va_arg(args, char*);
+
+		printf("%s", x);
+		if (separator != NULL && i < n - 1)
+			printf("%s", separator);
+		if (x == NULL)
+			printf("nil");
+	}
+	printf("\n");
+	va_end(args);
+}
