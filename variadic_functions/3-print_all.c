@@ -7,12 +7,12 @@
  */
 void print_all(const char * const format, ...)
 {
+	va_list args;
 	int i = 0;
 	char *str;
 	int num;
 	float flt;
 	char c;
-	va_list args;
 
 	va_start(args, format);
 
@@ -40,7 +40,8 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') && format[i + 1] != '\0')
-			printf(", ");
+			printf(", ");\
+		i++;
 	}
 	printf("\n");
 	va_end(args);
