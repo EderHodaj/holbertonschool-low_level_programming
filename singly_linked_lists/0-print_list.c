@@ -1,6 +1,11 @@
 #include "lists.h"
 #include <stddef.h>
 #include <stdio.h>
+/**
+ * print_list - sdfsdf
+ * @h:sdfsddf
+ * Return:sdfsdf
+ */
 
 size_t print_list(const list_t *h)
 {
