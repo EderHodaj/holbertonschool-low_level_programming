@@ -3,7 +3,7 @@
  * key_index - sdfsdf
  * @key:sdfsg
  * @size:fsdf
- * Retrun:dsgsdf
+ * Return:dsgsdf
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
